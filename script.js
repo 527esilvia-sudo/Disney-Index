@@ -16,5 +16,8 @@
 // )
 
 movieBank.forEach(movie => {
-
+    console.log(movie.movie)
+    movie.characters.forEach(character => {
+console.log(character.cname)
+    })
 });
