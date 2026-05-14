@@ -1,23 +1,27 @@
-// button.addEventListener("click", function () {
-//     let selected = this.value
-//     document.getElementById("info-abbreviation").textContent = stateData[selected].abbr
-//     document.getElementById("info-capitol").textContent = stateData[selected].capitol
-//     document.getElementById("info-population").textContent = stateData[selected].pop
-//     document.getElementById("info-flower").textContent = stateData[selected].flower
-//     document.getElementById("info-mammal").textContent = stateData[selected].mammal
-//     document.getElementById("info-statehood").textContent = stateData[selected].statehood
-//     document.getElementById("info-bird").textContent = stateData[selected].bird
-//     document.getElementById("info-tree").textContent = stateData[selected].tree
-//     document.getElementById("info-nickname").textContent = stateData[selected].nickname
-//     document.getElementById("info-pic").src = `img/${stateData[selected].abbr.toLowerCase()}.jpg`
-//      document.getElementById("info-name").textContent = stateData[selected].name
 
-// }
-// )
-
+    const card = document.getElementById("card-container");
 movieBank.forEach(movie => {
-    console.log(movie.movie)
+
     movie.characters.forEach(character => {
-console.log(character.cname)
+   card.innerHTML +=   `
+            <div class="col-6 mb-4">
+                <div class="card h-100 w-100">
+
+                    <img class="card-img-top img-character" src="" alt="${character.cname}">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">${character.cname}</h4>
+
+                        <p class="card-text">Movie: ${movie.movie}</p>
+                        <p class="card-text">Role: ${character.role}</p>
+                        <p class="card-text">Personality: ${character.personality}</p>
+                        <p class="card-text">Species: ${character.species}</p>
+
+                    </div>
+
+                </div>
+            </div>
+        `
     })
 });
