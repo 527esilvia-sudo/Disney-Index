@@ -40,12 +40,14 @@ movieBank.forEach(movie => {
                         ${movie.movie}
                     </h5>
                 </div>
-                 <button class="btn btn-primary mt-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#characterModal"
-              onclick="openModal()">
-              View
-            </button>
+                <button 
+    class="btn btn-primary mt-auto"
+    data-bs-toggle="modal"
+    data-bs-target="#characterModal"
+    onclick="openModal('${movie.movie}', '${character.cname}')"
+>
+    View
+</button>
                
 
             </div>
@@ -62,15 +64,34 @@ movieBank.forEach(movie => {
 // }
 const button = document.getElementById('modalBtn')
 
-function openModal () {
+function openModal(movieTitle, characterName) {
+
     movieBank.forEach(movie => {
-  movieBank.characters.forEach(character => {
 
-    console.log(character.cname);
-    console.log(character.role);
+        // Find correct movie
+        if (movie.movie === movieTitle) {
 
-  });
-});
-    //  document.getElementById('modalRole').textContent = movieBank[0].characters[0].cname;
-     
+            movie.characters.forEach(character => {
+
+                // Find correct character
+                if (character.cname === characterName) {
+
+                    document.getElementById('modalName').textContent = character.cname;
+
+                    document.getElementById('modalRole').textContent = character.role;
+
+                    document.getElementById('modalSpecies').textContent = character.species;
+
+                    document.getElementById('modalAlignment').textContent = character.alignment;
+
+                    console.log(character);
+
+                }
+
+            });
+
+        }
+
+    });
+
 }
