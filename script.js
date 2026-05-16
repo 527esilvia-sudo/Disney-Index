@@ -10,7 +10,7 @@ movieBank.forEach(movie => {
         <!-- Character Image -->
         <img 
             class="card-img img-character" 
-            src="https://placehold.co/600x400" 
+            src="https://cdn.shopify.com/s/files/1/0472/9900/2520/files/p19527_k_h9_ab_480x480.jpg?v=1718648724" 
             alt="${character.cname}"
         >
 
