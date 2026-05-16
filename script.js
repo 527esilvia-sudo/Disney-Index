@@ -40,9 +40,13 @@ movieBank.forEach(movie => {
                         ${movie.movie}
                     </h5>
                 </div>
-                 <button id= 'modalBtn' data-bs-toggle="modal" data-bs-target="#characterModal">
-  Open
-</button>
+                 <button class="btn btn-primary mt-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#characterModal"
+              onclick="openModal()">
+              View
+            </button>
+               
 
             </div>
 
@@ -58,7 +62,8 @@ movieBank.forEach(movie => {
 // }
 const button = document.getElementById('modalBtn')
 
-button.onclick = function () {
+function openModal () {
     console.log('button click')
-     document.getElementById('modalRole').textContent = characters.cname
+     document.getElementById('modalRole').textContent = movieBank[0].characters[0].cname;
+     
 }
