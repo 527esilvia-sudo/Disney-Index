@@ -1,27 +1,52 @@
 
-    const card = document.getElementById("card-container");
+const card = document.getElementById("card-container");
 movieBank.forEach(movie => {
 
     movie.characters.forEach(character => {
-   card.innerHTML +=   `
-            <div class="col-6 mb-4">
-                <div class="card h-100 w-100">
+        card.innerHTML += `
+     <div class="col-6 mb-4">
+    <div class="card h-100 w-100 text-white">
 
-                    <img class="card-img-top img-character" src="" alt="${character.cname}">
+        <!-- Character Image -->
+        <img 
+            class="card-img img-character" 
+            src="https://placehold.co/600x400" 
+            alt="${character.cname}"
+        >
 
-                    <div class="card-body">
+        <!-- Overlay -->
+        <div class="card-img-overlay p-0 d-flex flex-column justify-content-between">
 
-                        <h4 class="card-title">${character.cname}</h4>
-
-                        <p class="card-text">Movie: ${movie.movie}</p>
-                        <p class="card-text">Role: ${character.role}</p>
-                        <p class="card-text">Personality: ${character.personality}</p>
-                        <p class="card-text">Species: ${character.species}</p>
-
-                    </div>
-
-                </div>
+            <!-- Top Character Banner -->
+            <div class="bg-dark bg-opacity-75 w-100 py-2 px-3">
+                <h4 class="card-title m-0">
+                    ${character.cname}
+                </h4>
             </div>
+
+            <!-- Bottom Area -->
+            <div>
+
+                <!-- Character Info -->
+                <div class="bg-dark bg-opacity-50 p-2">
+                    <p class="card-text m-0">Role: ${character.role}</p>
+                    <p class="card-text m-0">Personality: ${character.personality}</p>
+                    <p class="card-text m-0">Species: ${character.species}</p>
+                </div>
+
+                <!-- Movie Banner -->
+                <div class="bg-primary w-100 py-2 px-3">
+                    <h5 class="m-0">
+                        ${movie.movie}
+                    </h5>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
         `
     })
 });
