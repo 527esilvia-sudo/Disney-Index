@@ -29,7 +29,6 @@ const movieBank = [
             { cname: "Coachman", role: "Antagonist", personality: ["Villainous"], species: "Human", alignment: "VILLAIN" },
             { cname: "Stromboli", role: "Villain", personality: ["Villainous"], species: "Human", alignment: "VILLAIN" },
             { cname: "Lampwick", role: "Peer", personality: ["Chaotic"], species: "Human", alignment: "NEUTRAL" },
-            { cname: "Monstro", role: "Force", personality: ["Villainous"], species: "Whale", alignment: "VILLAIN" }
         ]
     },
 
@@ -291,7 +290,8 @@ const movieBank = [
             { cname: "Zazu", role: "Advisor", personality: ["Stoic"], species: "Bird", alignment: "GOOD" },
 
             { cname: "Shenzi", role: "Antagonist", personality: ["Villainous"], species: "Hyena", alignment: "VILLAIN" },
-            { cname: "Banzai", role: "Antagonist", personality: ["Villainous"], species: "Hyena", alignment: "VILLAIN" }
+            { cname: "Banzai", role: "Antagonist", personality: ["Villainous"], species: "Hyena", alignment: "VILLAIN" },
+               { cname: "Ed", role: "Antagonist", personality: ["Villainous"], species: "Hyena", alignment: "VILLAIN" }
         ]
     },
 
@@ -328,8 +328,7 @@ const movieBank = [
             { cname: "Terk", role: "Sidekick", personality: ["Chaotic"], species: "Gorilla", alignment: "CHAOTIC" },
             { cname: "Tantor", role: "Sidekick", personality: ["Anxious"], species: "Elephant", alignment: "NEUTRAL" },
 
-            { cname: "Professor Porter", role: "Support", personality: ["Kindhearted"], species: "Human", alignment: "GOOD" },
-            { cname: "Young Tarzan", role: "Young Protagonist", personality: ["Neutral"], species: "Human", alignment: "GOOD" }
+            { cname: "Professor Porter", role: "Support", personality: ["Kindhearted"], species: "Human", alignment: "GOOD" }
         ]
     },
 
@@ -346,7 +345,6 @@ const movieBank = [
             { cname: "Tipo", role: "Child", personality: ["Chaotic"], species: "Human", alignment: "NEUTRAL" },
 
             { cname: "Bucky", role: "Animal Sidekick", personality: ["Chaotic"], species: "Squirrel", alignment: "CHAOTIC" },
-            { cname: "Royal Advisor", role: "Authority", personality: ["Stoic"], species: "Human", alignment: "GOOD" }
         ]
     },
 
@@ -382,7 +380,6 @@ const movieBank = [
 
             { cname: "Cobra Bubbles", role: "Agent", personality: ["Stoic"], species: "Human", alignment: "GOOD" },
             { cname: "David Kawena", role: "Support", personality: ["Kindhearted"], species: "Human", alignment: "GOOD" },
-            { cname: "Grand Councilwoman", role: "Authority", personality: ["Stoic"], species: "Alien", alignment: "GOOD" }
         ]
     },
 
@@ -412,9 +409,6 @@ const movieBank = [
             { cname: "Alameda Slim", role: "Villain", personality: ["Villainous"], species: "Human", alignment: "VILLAIN" },
 
             { cname: "Buck", role: "Sidekick", personality: ["Chaotic"], species: "Horse", alignment: "CHAOTIC" },
-            { cname: "Mrs. Dixon", role: "Farmer", personality: ["Kindhearted"], species: "Human", alignment: "GOOD" },
-
-            { cname: "The Willie Brothers", role: "Antagonists", personality: ["Chaotic"], species: "Human", alignment: "VILLAIN" }
         ]
     },
 
