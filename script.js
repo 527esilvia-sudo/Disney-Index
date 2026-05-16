@@ -63,7 +63,14 @@ movieBank.forEach(movie => {
 const button = document.getElementById('modalBtn')
 
 function openModal () {
-    console.log('button click')
-     document.getElementById('modalRole').textContent = movieBank[0].characters[0].cname;
+    movieBank.forEach(movie => {
+  movieBank.characters.forEach(character => {
+
+    console.log(character.cname);
+    console.log(character.role);
+
+  });
+});
+    //  document.getElementById('modalRole').textContent = movieBank[0].characters[0].cname;
      
 }
